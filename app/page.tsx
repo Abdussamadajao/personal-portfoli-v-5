@@ -1,7 +1,8 @@
 import Hero from "@/sections/home/hero";
 import AboutContainer from "@/sections/about";
 import ProjectContainer from "@/sections/projects";
-import Footer from "@/sections/footer";
+import Contact from "@/sections/contact";
+import Footer from "@/layout/footer";
 
 export default function Home() {
   const structuredData = {
@@ -56,7 +57,7 @@ export default function Home() {
         <section id="projects" className="py-20">
           <ProjectContainer />
         </section>
-        <Footer />
+        <Contact />
       </div>
     </>
   );

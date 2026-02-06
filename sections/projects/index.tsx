@@ -6,15 +6,15 @@ import { Github, ExternalLink } from 'lucide-react'
 const ProjectCard = ({ project }: { project: IProject }) => {
     return (
         <div className="group relative bg-card border border-border rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1">
-            <div className="relative h-64 w-full">
+            <div className="relative h-64 w-full overflow-hidden">
                 <Image
                     src={project.image_path}
                     alt={project.name}
                     fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="object-cover transition-transform duration-300 group-hover:scale-105 z-0"
                 />
-                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <div className="text-center space-y-4 px-6">
+                <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 flex items-center justify-center">
+                    <div className="text-center space-y-4 px-6 relative z-20">
                         <h4 className="text-2xl font-bold text-white mb-2">{project.name}</h4>
                         <p className="text-sm text-white/90 line-clamp-2 mb-4">
                             {project.description}
@@ -75,20 +75,6 @@ const ProjectCard = ({ project }: { project: IProject }) => {
 }
 
 const ProjectContainer = () => {
-    const groupedProjects = projects.reduce((acc, project) => {
-        const type = project.project_type
-        if (!acc[type]) {
-            acc[type] = []
-        }
-        acc[type].push(project)
-        return acc
-    }, {} as Record<string, IProject[]>)
-
-    const typeLabels: Record<string, string> = {
-        personal: 'Personal Projects',
-        client: 'Client Projects'
-    }
-
     return (
         <main className='max-w-[1400px] mx-auto px-6'>
             <section className="space-y-12">
@@ -101,18 +87,11 @@ const ProjectContainer = () => {
                     </p>
                 </div>
 
-                {Object.entries(groupedProjects).map(([type, typeProjects]) => (
-                    <div key={type} className="space-y-6">
-                        <h3 className="text-2xl font-bold text-white capitalize">
-                            {typeLabels[type] || type}
-                        </h3>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            {typeProjects.map((project) => (
-                                <ProjectCard key={project.id} project={project} />
-                            ))}
-                        </div>
-                    </div>
-                ))}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {projects.map((project) => (
+                        <ProjectCard key={project.id} project={project} />
+                    ))}
+                </div>
             </section>
         </main>
     )

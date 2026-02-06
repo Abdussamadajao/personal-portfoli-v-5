@@ -1,7 +1,6 @@
 "use client";
-import React from "react";
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
-
+import { Mail } from "lucide-react";
+import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -15,18 +14,18 @@ const Footer = () => {
   const socialLinks = [
     {
       name: "Github",
-      icon: Github,
-      href: "https://github.com",
+      icon: FaGithub,
+      href: "https://github.com/Abdussamadajao",
     },
     {
       name: "LinkedIn",
-      icon: Linkedin,
-      href: "https://linkedin.com",
+      icon: FaLinkedin,
+      href: "http://www.linkedin.com/in/ajaoabdussamad",
     },
     {
       name: "Twitter",
-      icon: Twitter,
-      href: "https://twitter.com",
+      icon: FaXTwitter,
+      href: "https://x.com/AbdussamadAjao",
     },
     {
       name: "Email",
@@ -34,9 +33,8 @@ const Footer = () => {
       href: "mailto:abdussamadajao@gmail.com",
     },
   ];
-
   return (
-    <footer id="contact" className="border-t border-border bg-card/50">
+    <footer className="border-t border-border bg-card/50">
       <div className="max-w-[1400px] mx-auto px-6 py-12">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="flex flex-col items-center md:items-start gap-4">

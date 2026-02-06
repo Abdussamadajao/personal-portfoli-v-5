@@ -42,7 +42,7 @@ const Navbar = () => {
             onClick={() => scrollToSection("home")}
             className="text-2xl text-accent-foreground font-bold letter-spacing-tight hover:text-primary transition-colors"
           >
-            AS
+              AS
           </button>
         </div>
         <div className="hidden md:flex items-center gap-8">
