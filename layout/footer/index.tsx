@@ -38,7 +38,7 @@ const Footer = () => {
       <div className="max-w-[1400px] mx-auto px-6 py-12">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="flex flex-col items-center md:items-start gap-4">
-            <h3 className="text-2xl font-bold text-white">Ajao Abdussamad</h3>
+            <h3 className="text-2xl font-bold text-white">Abdus-Samad Ajao</h3>
             <p className="text-white/60 text-sm text-center md:text-left">
               Frontend Developer crafting beautiful digital experiences
             </p>
@@ -63,7 +63,7 @@ const Footer = () => {
               })}
             </div>
             <p className="text-white/40 text-xs text-center md:text-right">
-              © {currentYear} Ajao Abdussamad. All rights reserved.
+              © {currentYear} Abdus-Samad Ajao. All rights reserved.
             </p>
           </div>
         </div>

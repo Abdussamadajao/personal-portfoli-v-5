@@ -1,75 +1,33 @@
-import { History, Rocket, Star, Terminal, TrendingUp, Users, Zap } from "lucide-react";
+import { Terminal } from "lucide-react";
 import React from "react";
 
 const ProfessionalHistory = () => {
   const experiences = [
     {
       id: 1,
-      company: "PNEUMACARE",
-      location: "Abuja, Nigeria",
+      company: "PneumaCare",
+      location: "United Kingdom (Remote)",
       position: "Frontend Developer",
-      duration: "August 2021 - February 2026",
+      duration: "Mar 2022 – Feb 2025",
       achievements: [
-        "Architected and implemented complex healthcare dashboards with third-party API integrations using React, Redux, and modern state management patterns, resulting in 40% increased patient engagement.",
-        "Developed scalable landing pages with advanced search functionality, appointment booking systems, and real-time test result displays using React hooks and context API.",
-        "Built comprehensive patient management platforms with role-based access control, file upload systems, and automated follow-up workflows for hospital operations.",
-        "Optimized application performance by implementing code splitting, lazy loading, and memoization techniques, reducing load times by 35%.",
-        "Collaborated closely with cross-functional team members, including product owners and QA testers, to deliver high-quality software products within iterative development cycles.",
-      ],
-      technologies: [
-        "React",
-        "Redux",
-        "Context API",
-        "Performance Optimization",
-        "Healthcare APIs",
-      ],
-      highlights: [
-        {
-          icon: TrendingUp,
-          text: "40% Patient Engagement",
-          color: "text-green-500",
-        },
-        { icon: Zap, text: "35% Performance Boost", color: "text-emerald-500" },
-        {
-          icon: Users,
-          text: "Cross-functional Team",
-          color: "text-purple-500",
-        },
+        "Architected and shipped complex healthcare dashboards integrating multiple third-party APIs using React, Redux Toolkit, and context-driven state management — directly contributing to a 40% increase in patient engagement.",
+        "Built a full-featured patient management platform with role-based access control, file upload workflows, and automated follow-up systems, improving operational efficiency across hospital teams.",
+        "Developed scalable landing pages with advanced search, real-time test result displays, and appointment booking systems using React Hooks and modern component patterns.",
+        "Optimised application performance through strategic code splitting, lazy loading, and memoization reducing average load times by 35%.",
+        "Collaborated with product owners, designers, and QA engineers within iterative agile cycles to consistently deliver high-quality, production-ready features on schedule.",
       ],
     },
     {
       id: 2,
-      company: "MKAN",
-      location: "Nigeria",
-      position: "Frontend Engineer",
-      duration: "May 2022 - present",
+      company: "GoCaby Technology Limited",
+      location: "Abuja, Nigeria",
+      position: "Frontend & Mobile Developer",
+      duration: "Mar 2022 – Nov 2024",
       achievements: [
-        "Architected and developed a high-volume payment platform serving 10,000+ users, enhancing transaction processing efficiency and boosting customer satisfaction by 35%.",
-        "Created reusable frontend modules and component libraries, improving code maintainability and accelerating development time for new features by 40%.",
-        "Designed and implemented responsive design patterns across web interfaces, ensuring cross-device consistency and minimizing UI-related defects by 30%.",
-        "Architected intuitive UX workflows, reducing user errors by 25% and boosting user engagement and completion rates by 28%.",
-        "Established code versioning and collaboration workflows using Git, delivering clean releases, streamlined development processes, and achieving a 20% reduction in deployment-related issues.",
-      ],
-      technologies: [
-        "React",
-        "Payment Systems",
-        "Component Architecture",
-        "Responsive Design",
-        "Git",
-        "UX Design",
-      ],
-      highlights: [
-        {
-          icon: TrendingUp,
-          text: "35% Customer Satisfaction",
-          color: "text-green-500",
-        },
-        { icon: Zap, text: "40% Faster Development", color: "text-emerald-500" },
-        {
-          icon: Users,
-          text: "10,000+ Users",
-          color: "text-primary",
-        },
+        "Delivered a feature-rich cross-platform dashboard and mobile app using React, Next.js, and React Native — integrating real-time updates via Firebase and complex data visualisation with Redux Toolkit, contributing to a 30% increase in company revenue.",
+        "Built high-converting, responsive interfaces with advanced form validation, Stripe payment integration, and live delivery booking/tracking with push notifications, improving both customer acquisition and operational throughput.",
+        "Engineered a shared TypeScript component library consumed across web and mobile codebases, reducing duplication and cutting feature development time by an estimated 25%.",
+        "Implemented automated testing suites with Jest and React Testing Library, achieving robust test coverage and improving release confidence across frontend and mobile applications.",
       ],
     },
   ];
@@ -98,19 +56,14 @@ const ProfessionalHistory = () => {
 
             {/* Experience Content */}
             <div className="flex flex-1 flex-col pb-12">
-              <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-3">
-                <h3 className="text-white text-xl font-bold">
-                  {experience.position}
-                </h3>
-                <span className="text-primary text-sm font-medium">
-                  {experience.duration}
-                </span>
-              </div>
+              <h3 className="text-white text-xl font-bold mb-3">
+                {experience.position}
+              </h3>
               <p className="text-primary text-base font-semibold mb-1">
                 {experience.company}
               </p>
               <p className="text-white/60 text-sm font-normal mb-6">
-                {experience.location}
+                {experience.location} · {experience.duration}
               </p>
               <ul className="space-y-3 text-white/80 text-sm leading-relaxed">
                 {experience.achievements.map((achievement, idx) => (

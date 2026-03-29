@@ -2,88 +2,63 @@ import React from 'react'
 
 const skillCategories = [
     {
-        title: "Frontend Technologies",
-
+        title: "Languages",
         skills: [
-            { name: "React", },
-            { name: "Next.js", },
             { name: "TypeScript" },
-            { name: "JavaScript" },
+            { name: "JavaScript (ES2022+)" },
+        ],
+    },
+    {
+        title: "Frontend",
+        skills: [
+            { name: "React.js" },
+            { name: "Next.js" },
+            { name: "Vite" },
+            { name: "Sass / Less" },
             { name: "HTML5" },
             { name: "CSS3" },
-            { name: "Tailwind CSS" },
-            { name: "SASS" },
-            { name: "Styled Components" },
-            { name: "Bootstrap" },
-            { name: "Chakra UI" },
-            { name: "Shadcn UI" },
         ],
     },
     {
-        title: "Mobile & PWA",
-
+        title: "Mobile",
         skills: [
-            { name: "React Native" },
-            { name: "Expo" },
-            { name: "Flutter" }
+            { name: "React Native (Android & iOS)" },
         ],
     },
     {
-        title: "State Management & Data",
-
+        title: "State Management",
         skills: [
-            { name: "Redux" },
-            { name: "Context API" },
-            { name: "React Query" },
-            { name: "Zustand" },
             { name: "Redux Toolkit" },
+            { name: "Zustand" },
+            { name: "React Context API" },
         ],
     },
     {
-        title: "Backend & Database",
-
+        title: "Backend & APIs",
         skills: [
-            { name: "Firebase" },
-            { name: "MongoDB" },
-            { name: "Supabase" },
-            { name: "Prisma" },
-            { name: "Appwrite" },
-            { name: "Socket.io" },
+            { name: "Node.js" },
+            { name: "GraphQL" },
+            { name: "RESTful APIs" },
+            { name: "Firebase (Realtime DB, Auth, FCM)" },
         ],
     },
     {
-        title: "Build Tools & Development",
-
+        title: "Testing",
         skills: [
-            { name: "Vite" },
-            { name: "Webpack" },
-            { name: "Yarn" },
-            { name: "NPM" },
+            { name: "Jest" },
+            { name: "Vitest" },
+            { name: "React Testing Library" },
+            { name: "Enzyme" },
+        ],
+    },
+    {
+        title: "Tooling & CI/CD",
+        skills: [
             { name: "Git" },
             { name: "GitHub" },
-            { name: "GitLab" },
-            { name: "GitHub Actions" },
-            { name: "GitLab CI" },
-        ],
-    },
-    {
-        title: "Deployment & Hosting",
-
-        skills: [
-            { name: "Vercel" },
-            { name: "Netlify" },
-            { name: "Render" },
-            { name: "Railway" },
-        ],
-    },
-    {
-        title: "Libraries & Utilities",
-        skills: [
-            { name: "React Hook Form" },
-            { name: "Chart.js" },
-            { name: "Three.js" },
-            { name: "Framer Motion" },
-            { name: "React Router" },
+            { name: "Code Splitting" },
+            { name: "Lazy Loading" },
+            { name: "Memoization" },
         ],
     },
 ];

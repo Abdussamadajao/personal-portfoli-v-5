@@ -8,10 +8,10 @@ export default function Home() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Ajao Abdussamad",
-    jobTitle: "Frontend Developer",
+    name: "Abdus-Samad Ajao",
+    jobTitle: "Frontend & Mobile Developer",
     description:
-      "Frontend Architect specializing in high-performance, cinematic web experiences and scalable design systems.",
+      "Frontend & Mobile Developer with 3+ years of experience in React, Next.js, TypeScript, and React Native. Healthcare dashboards, cross-platform apps, and performance-optimised UIs.",
     url: "https://abdussamadajao.com",
     email: "abdussamadajao@gmail.com",
     telephone: "+2348125745960",
@@ -21,9 +21,9 @@ export default function Home() {
       addressCountry: "NG",
     },
     sameAs: [
-      "https://github.com",
-      "https://linkedin.com",
-      "https://twitter.com",
+      "https://github.com/abdussamadajao",
+      "https://www.linkedin.com/in/ajaoabdussamad",
+      "https://x.com/AbdussamadAjao",
     ],
     alumniOf: {
       "@type": "EducationalOrganization",
@@ -34,10 +34,10 @@ export default function Home() {
       "React",
       "Next.js",
       "TypeScript",
+      "React Native",
       "JavaScript",
       "Frontend Development",
-      "Web Development",
-      "UI/UX Design",
+      "Mobile Development",
     ],
   };
 
@@ -48,7 +48,10 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       <div className="min-h-screen">
-        <section id="home" className="flex min-h-screen items-center justify-center">
+        <section
+          id="home"
+          className="flex min-h-screen items-center justify-center"
+        >
           <Hero />
         </section>
         <section id="about" className="py-20">

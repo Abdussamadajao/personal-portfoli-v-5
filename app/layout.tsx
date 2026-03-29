@@ -16,34 +16,34 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteDescription =
+  "Frontend & Mobile Developer with 3+ years building React, Next.js, TypeScript, and React Native apps — healthcare dashboards, cross-platform mobile, and performance-optimised UIs.";
+
 export const metadata: Metadata = {
   title: {
-    default: "Ajao Abdussamad - Frontend Developer | Portfolio",
-    template: "%s | Ajao Abdussamad",
+    default: "Abdus-Samad Ajao - Frontend & Mobile Developer | Portfolio",
+    template: "%s | Abdus-Samad Ajao",
   },
-  description:
-    "Frontend Architect specializing in high-performance, cinematic web experiences and scalable design systems. Expert in React, Next.js, TypeScript, and modern web technologies.",
+  description: siteDescription,
   keywords: [
     "Frontend Developer",
-    "React Developer",
+    "React Native Developer",
     "Next.js Developer",
     "TypeScript",
     "Web Developer",
-    "UI/UX Developer",
-    "Frontend Architect",
+    "Mobile Developer",
     "React",
     "Next.js",
     "JavaScript",
     "Web Development",
     "Portfolio",
-    "Ajao Abdussamad",
+    "Abdus-Samad Ajao",
     "Abuja, Nigeria",
     "Healthcare Applications",
-    "E-commerce Solutions",
   ],
-  authors: [{ name: "Ajao Abdussamad", url: "https://abdussamadajao.com" }],
-  creator: "Ajao Abdussamad",
-  publisher: "Ajao Abdussamad",
+  authors: [{ name: "Abdus-Samad Ajao", url: "https://abdussamadajao.com" }],
+  creator: "Abdus-Samad Ajao",
+  publisher: "Abdus-Samad Ajao",
   metadataBase: new URL("https://abdussamadajao.com"),
   alternates: {
     canonical: "/",
@@ -52,24 +52,22 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://abdussamadajao.com",
-    siteName: "Ajao Abdussamad - Portfolio",
-    title: "Ajao Abdussamad - Frontend Developer | Portfolio",
-    description:
-      "Frontend Architect specializing in high-performance, cinematic web experiences and scalable design systems.",
+    siteName: "Abdus-Samad Ajao - Portfolio",
+    title: "Abdus-Samad Ajao - Frontend & Mobile Developer | Portfolio",
+    description: siteDescription,
     images: [
       {
         url: "/images/abdussamad.png",
         width: 1200,
         height: 630,
-        alt: "Ajao Abdussamad - Frontend Developer",
+        alt: "Abdus-Samad Ajao - Frontend & Mobile Developer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ajao Abdussamad - Frontend Developer | Portfolio",
-    description:
-      "Frontend Architect specializing in high-performance, cinematic web experiences and scalable design systems.",
+    title: "Abdus-Samad Ajao - Frontend & Mobile Developer | Portfolio",
+    description: siteDescription,
     images: ["/images/abdussamad.png"],
     creator: "@abdussamadajao",
   },

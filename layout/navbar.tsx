@@ -60,8 +60,8 @@ const Navbar = () => {
           <div className="h-8 w-px bg-white/10 mx-1"></div>
           <div className="flex items-center gap-3">
             <div className="text-right hidden sm:block">
-              <p className="text-xs font-bold text-white leading-none capitalize">
-                ajao abdussamad
+              <p className="text-xs font-bold text-white leading-none">
+                Abdus-Samad Ajao
               </p>
               <p className="text-[10px] text-primary font-medium mt-1 uppercase tracking-wider">
                 Available

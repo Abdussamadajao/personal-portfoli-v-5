@@ -13,10 +13,10 @@ const Education = () => {
                     className="flex flex-col gap-2 border-l-2 border-primary/30 pl-6"
                 >
                     <p className="text-white text-lg font-bold">
-                        B.Sc. in Software Engineering
+                        BSc. Software Engineering
                     </p>
                     <p className="text-white/60 text-sm font-medium">
-                        Al-Hikmah University, ilorin, 2025
+                        Al-Hikmah University, Ilorin, Nigeria · Nov 2021 – Sep 2025
                     </p>
                 </div>
             </div>
