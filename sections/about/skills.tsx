@@ -67,7 +67,7 @@ const Skills = () => {
     return (
         <section className="mb-12" id="skills">
             <h2
-                className="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] mb-8 uppercase"
+                className="text-foreground text-[22px] font-bold leading-tight tracking-[-0.015em] mb-8 uppercase"
             >
                 04 / Skills
             </h2>
@@ -83,7 +83,7 @@ const Skills = () => {
                             {category.skills.map((skill, skillIndex) => (
                                 <span
                                     key={skillIndex}
-                                    className="px-3 py-1.5 bg-card text-white text-xs font-bold rounded-lg uppercase tracking-wider border border-border hover:border-primary/50 transition-colors"
+                                    className="px-3 py-1.5 bg-card text-card-foreground text-xs font-bold rounded-lg uppercase tracking-wider border border-border hover:border-primary/50 transition-colors"
                                 >
                                     {skill.name}
                                 </span>

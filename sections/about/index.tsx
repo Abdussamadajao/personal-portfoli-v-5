@@ -82,10 +82,10 @@ const AboutContainer = () => {
           <div className="max-w-4xl">
             <section className="mb-24">
               <div className="flex flex-col gap-6 mb-8">
-                <h2 className="text-white text-4xl font-black leading-tight tracking-[-0.033em]">
+                <h2 className="text-foreground text-4xl font-black leading-tight tracking-[-0.033em]">
                   01 / About
                 </h2>
-                <p className="text-[#9dabb9] text-lg font-normal leading-relaxed">
+                <p className="text-muted-foreground text-lg font-normal leading-relaxed">
                   Results-driven Frontend & Mobile Developer with 3+ years of
                   production experience building scalable, high-performance web
                   and mobile applications. Specializing in React, Next.js, React
@@ -93,7 +93,7 @@ const AboutContainer = () => {
                   healthcare dashboards, cross-platform mobile solutions, and
                   performance optimized UIs trusted by real users.
                 </p>
-                <p className="text-white/80 text-base font-normal leading-relaxed">
+                <p className="text-foreground/90 text-base font-normal leading-relaxed">
                   I thrive in cross-functional agile teams and am passionate
                   about clean architecture, intuitive UX, and measurable impact.
                 </p>

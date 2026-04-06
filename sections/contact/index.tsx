@@ -113,7 +113,7 @@ const Contact = () => {
               <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tighter leading-tight">
                 Let's bring your ideas to <span className="text-primary">life</span>
               </h2>
-              <p className="text-lg text-white/60 max-w-md leading-relaxed">
+              <p className="text-lg text-muted-foreground max-w-md leading-relaxed">
                 I'm currently open to new opportunities, technical collaborations, and
                 open-source contributions. Drop me a line and let's discuss your next
                 project.
@@ -121,7 +121,7 @@ const Contact = () => {
             </div>
 
             <div className="space-y-4">
-              <p className="text-xs font-bold text-white/50 uppercase tracking-widest">
+              <p className="text-xs font-bold text-muted-foreground uppercase tracking-widest">
                 Connect with me
               </p>
               <div className="flex flex-wrap gap-4">
@@ -136,7 +136,7 @@ const Contact = () => {
                       className="group size-12 rounded-xl bg-card border border-border flex items-center justify-center hover:bg-primary hover:border-primary transition-all duration-300"
                       aria-label={link.name}
                     >
-                      <Icon className="text-xl text-white/70 group-hover:text-white transition-colors" />
+                      <Icon className="text-xl text-muted-foreground group-hover:text-primary-foreground transition-colors" />
                     </a>
                   );
                 })}
@@ -144,11 +144,11 @@ const Contact = () => {
             </div>
 
             <div className="pt-8 border-t border-border space-y-3">
-              <div className="flex items-center gap-3 text-white/60">
+              <div className="flex items-center gap-3 text-muted-foreground">
                 <Mail className="text-sm" />
                 <span className="text-sm font-medium">abdussamadajao@gmail.com</span>
               </div>
-              <div className="flex items-center gap-3 text-white/60">
+              <div className="flex items-center gap-3 text-muted-foreground">
                 <MapPin className="text-sm" />
                 <span className="text-sm font-medium">Abuja, Nigeria</span>
               </div>

@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link";
+import { ThemeToggle } from "@/components/theme-toggle";
 import React from "react";
 
 interface NavItem {
@@ -35,7 +35,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-background/80 backdrop-blur-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-sm">
       <div className="max-w-[1400px] mx-auto px-6 h-16 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <button
@@ -50,17 +50,18 @@ const Navbar = () => {
             <button
               key={item.name}
               onClick={() => scrollToSection(item.href.replace("#", ""))}
-              className="text-white/70 hover:text-primary text-sm font-medium transition-colors"
+              className="text-muted-foreground hover:text-primary text-sm font-medium transition-colors"
             >
               {item.name}
             </button>
           ))}
         </div>
-        <div className="flex items-center gap-4">
-          <div className="h-8 w-px bg-white/10 mx-1"></div>
+        <div className="flex items-center gap-3 sm:gap-4">
+          <ThemeToggle />
+          <div className="h-8 w-px bg-border mx-0 sm:mx-1"></div>
           <div className="flex items-center gap-3">
             <div className="text-right hidden sm:block">
-              <p className="text-xs font-bold text-white leading-none">
+              <p className="text-xs font-bold text-foreground leading-none">
                 Abdus-Samad Ajao
               </p>
               <p className="text-[10px] text-primary font-medium mt-1 uppercase tracking-wider">

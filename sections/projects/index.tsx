@@ -55,8 +55,8 @@ const ProjectCard = ({ project }: { project: IProject }) => {
                 </div>
             </div>
             <div className="p-6">
-                <h4 className="text-xl font-bold text-white mb-2">{project.name}</h4>
-                <p className="text-sm text-white/70 line-clamp-2 mb-4">
+                <h4 className="text-xl font-bold text-foreground mb-2">{project.name}</h4>
+                <p className="text-sm text-muted-foreground line-clamp-2 mb-4">
                     {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2">
@@ -79,10 +79,10 @@ const ProjectContainer = () => {
         <main className='max-w-[1400px] mx-auto px-6'>
             <section className="space-y-12">
                 <div>
-                    <h2 className="text-white text-4xl font-black leading-tight tracking-[-0.033em] mb-4">
+                    <h2 className="text-foreground text-4xl font-black leading-tight tracking-[-0.033em] mb-4">
                         02 / Projects
                     </h2>
-                    <p className="text-[#9dabb9] text-lg font-normal leading-relaxed max-w-2xl">
+                    <p className="text-muted-foreground text-lg font-normal leading-relaxed max-w-2xl">
                         A collection of projects showcasing my expertise in building modern, scalable web applications.
                     </p>
                 </div>

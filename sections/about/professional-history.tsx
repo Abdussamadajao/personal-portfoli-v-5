@@ -35,7 +35,7 @@ const ProfessionalHistory = () => {
   return (
     <section className="mb-24" id="experience">
       <h2
-        className="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] mb-8 uppercase"
+        className="text-foreground text-[22px] font-bold leading-tight tracking-[-0.015em] mb-8 uppercase"
       >
         02 / Experience
       </h2>
@@ -56,16 +56,16 @@ const ProfessionalHistory = () => {
 
             {/* Experience Content */}
             <div className="flex flex-1 flex-col pb-12">
-              <h3 className="text-white text-xl font-bold mb-3">
+              <h3 className="text-foreground text-xl font-bold mb-3">
                 {experience.position}
               </h3>
               <p className="text-primary text-base font-semibold mb-1">
                 {experience.company}
               </p>
-              <p className="text-white/60 text-sm font-normal mb-6">
+              <p className="text-muted-foreground text-sm font-normal mb-6">
                 {experience.location} · {experience.duration}
               </p>
-              <ul className="space-y-3 text-white/80 text-sm leading-relaxed">
+              <ul className="space-y-3 text-foreground/90 text-sm leading-relaxed">
                 {experience.achievements.map((achievement, idx) => (
                   <li key={idx} className="flex gap-3">
                     <span

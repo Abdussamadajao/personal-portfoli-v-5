@@ -38,8 +38,8 @@ const Footer = () => {
       <div className="max-w-[1400px] mx-auto px-6 py-12">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="flex flex-col items-center md:items-start gap-4">
-            <h3 className="text-2xl font-bold text-white">Abdus-Samad Ajao</h3>
-            <p className="text-white/60 text-sm text-center md:text-left">
+            <h3 className="text-2xl font-bold text-foreground">Abdus-Samad Ajao</h3>
+            <p className="text-muted-foreground text-sm text-center md:text-left">
               Frontend Developer crafting beautiful digital experiences
             </p>
           </div>
@@ -54,7 +54,7 @@ const Footer = () => {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 flex items-center justify-center rounded-lg bg-white/5 hover:bg-primary/20 text-white/70 hover:text-primary transition-all border border-white/10 hover:border-primary/30"
+                    className="w-10 h-10 flex items-center justify-center rounded-lg bg-muted/50 hover:bg-primary/20 text-muted-foreground hover:text-primary transition-all border border-border hover:border-primary/30"
                     aria-label={link.name}
                   >
                     <Icon className="text-lg" />
@@ -62,7 +62,7 @@ const Footer = () => {
                 );
               })}
             </div>
-            <p className="text-white/40 text-xs text-center md:text-right">
+            <p className="text-muted-foreground text-xs text-center md:text-right">
               © {currentYear} Abdus-Samad Ajao. All rights reserved.
             </p>
           </div>
@@ -72,19 +72,19 @@ const Footer = () => {
           <div className="flex flex-wrap justify-center gap-6 text-sm">
             <button
               onClick={() => scrollToSection("home")}
-              className="text-white/60 hover:text-primary transition-colors"
+              className="text-muted-foreground hover:text-primary transition-colors"
             >
               Home
             </button>
             <button
               onClick={() => scrollToSection("about")}
-              className="text-white/60 hover:text-primary transition-colors"
+              className="text-muted-foreground hover:text-primary transition-colors"
             >
               About
             </button>
             <button
               onClick={() => scrollToSection("projects")}
-              className="text-white/60 hover:text-primary transition-colors"
+              className="text-muted-foreground hover:text-primary transition-colors"
             >
               Projects
             </button>
@@ -92,7 +92,7 @@ const Footer = () => {
               href="https://docs.google.com/document/d/1-xvuwTis1VXMMyAnifxKnS6p3HBpyyuOD5r3GWd7uHk/edit?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white/60 hover:text-primary transition-colors"
+              className="text-muted-foreground hover:text-primary transition-colors"
             >
               Resume
             </a>
